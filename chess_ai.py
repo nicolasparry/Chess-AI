@@ -7,3 +7,12 @@
 #b) iterate through all possible moves and do the one that maximises the objective function
 #SECOND EFFORT
 #b) iterate N moves into the future for you and the opponent. at each step, select the play maximising the objective function. actually choose the move that maximises the objective function N moves in the future
+
+
+#TEST
+import chess
+import chess.svg
+
+board = chess.Board()
+squares = board.attacks(chess.E4)
+chess.svg.board(board, squares=squares, size=350)  
